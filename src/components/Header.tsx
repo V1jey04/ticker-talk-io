@@ -15,7 +15,7 @@ export const Header = ({ searchTerm, onSearchChange }: HeaderProps) => {
           <div className="flex items-center space-x-2">
             <TrendingUp className="h-8 w-8 text-primary" />
             <div>
-              <h1 className="text-2xl font-bold text-foreground">StockRadar</h1>
+              <h1 className="text-2xl font-bold text-foreground">StockPulse</h1>
               <p className="text-sm text-muted-foreground">Reddit Community Picks</p>
             </div>
           </div>
