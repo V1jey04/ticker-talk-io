@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { StockCard } from "@/components/StockCard";
+import { RecommendationsSection } from "@/components/RecommendationsSection";
 import { sampleStocks } from "@/data/sampleStocks";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -30,6 +31,9 @@ const Index = () => {
       <HeroSection />
       
       <main className="container mx-auto px-4 py-12">
+        {/* Top Recommendations */}
+        <RecommendationsSection stocks={sampleStocks} />
+        
         {/* Filters */}
         <div className="mb-8">
           <h2 className="text-2xl font-bold text-foreground mb-4">Trending Stock Picks</h2>
